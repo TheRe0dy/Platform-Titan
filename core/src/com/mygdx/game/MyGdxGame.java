@@ -13,16 +13,15 @@ public class MyGdxGame extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		Platform pl = new Platform(50, 50, 0, 1, "Platform.png");
-		Object object = new Object(50, 50, 0, 1, "Platform.png");
+		pl = new Platform(50, 50, 0, 1, "Platform.png");
 	}
 
 	@Override
 	public void render () {
 		ScreenUtils.clear(1, 0, 0, 1);
 		batch.begin();
-		//batch.draw(pl.getTexture(), pl.getCordX(), pl.getCordY()); //вылетает
-		//System.out.println(object.getCordX()); //вылетает
+		batch.draw(pl.getTexture(), pl.getCordX(), pl.getCordY());
+
 		batch.end();
 	}
 	
