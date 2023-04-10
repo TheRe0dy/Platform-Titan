@@ -20,6 +20,7 @@ public class Object {
         life = true;
     }
 
+
     public void render(Batch batch){
         batch.draw(getTexture(), getCordX(), getCordY());
     }
